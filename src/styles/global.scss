@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 $font: "Inter", sans-serif;
 
+@font-face {
+  font-family: "NYP";
+  src: url("/NYP.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -153,13 +158,6 @@ body {
   color: $c-text-t;
 }
 
-main {
-  padding: 2rem;
-  @media (max-width: 660px) {
-    padding: 1rem;
-  }
-}
-
 h1 {
   font-size: 2em;
   line-height: 1.05;
@@ -196,7 +194,7 @@ h1 {
   }
   &__elemento {
     @include text;
-    margin-top: 0.125rem;
+    margin-top: 0.145rem;
     &--link {
       text-decoration: underline;
       transition: opacity 0.6s ease;
@@ -243,8 +241,45 @@ h1 {
       }
     }
     &__lista {
-      font-size: 12px;
+      font-size: 14px;
       opacity: 0.5;
+    }
+  }
+}
+.involucro {
+  max-width: 1320px;
+  width: 100%;
+}
+.superiore {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  margin: 2rem 0;
+  font-size: 2.8vw;
+  font-family: "NYP", serif;
+  color: $c-text-p;
+  &__titolo {
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    &:nth-child(1) {
+      grid-column: span 14 / span 14;
+      grid-column-start: 2;
+    }
+    &:nth-child(2) {
+      grid-column: span 14 / span 14;
+      grid-column-start: 3;
+    }
+    &:nth-child(3) {
+      grid-column: span 14 / span 14;
+      grid-column-start: 2;
+    }
+    &:nth-child(4) {
+      grid-column: span 14 / span 14;
+      grid-column-start: 0;
+    }
+    &:nth-child(5) {
+      grid-column: span 14 / span 14;
+      grid-column-start: 0;
     }
   }
 }
