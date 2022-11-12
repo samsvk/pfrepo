@@ -150,12 +150,24 @@ $c-text-p: #343434;
     grid-column-start: 5;
     text-align: right;
   }
+  .container__face:nth-of-type(2) .container__face__inner__col {
+    grid-column: span 2 / span 2;
+    height: 100%;
+    padding: 2rem;
+    background: $c-body;
+    // filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+    // filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+    //   drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    border-right: 1px solid rgb(0 0 0 / 0.06);
+    // border-radius: 6px;
+  }
 }
 
 body {
   font-family: $font;
   background: $c-body;
   color: $c-text-t;
+  @include text;
 }
 
 h1 {
@@ -282,4 +294,17 @@ h1 {
       grid-column-start: 0;
     }
   }
+}
+
+.navigazione {
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  margin-bottom: auto;
+  margin: 0 auto;
+  max-width: 1320px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem 0;
+  @include text;
 }

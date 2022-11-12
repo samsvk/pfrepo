@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { useState } from "react";
 import DATA from "../static/_";
-import Image from "next/image";
 import { RiArrowRightDownLine } from "react-icons/ri";
 
 export default function Home() {
   const [show, setShow] = useState(1);
+  const [project, setProject] = useState(null);
+  console.log(project);
   return (
     <>
       <div className="container">
@@ -18,24 +19,18 @@ export default function Home() {
           className="container__face"
           style={{
             transform: `${show === 1 ? "rotateY(0deg)" : "rotateY(180deg)"}`,
-            opacity: `${show === 1 ? 1 : 0}`,
+            opacity: `${show === 1 ? 1 : 0.25}`,
             zIndex: `${show === 1 ? 5 : 0}`,
           }}
         >
           <div className="container__face__inner">
             <div className="involucro">
-              {/* <section className="superiore">
-                <h1 className="superiore__titolo">SAM CAMPBELL (23) IS A</h1>
-                <h1 className="superiore__titolo">*CREATIVE DEVELOPER*</h1>
-                <h1 className="superiore__titolo">FROM »SCOTLAND«</h1>
-                <h1 className="superiore__titolo">BASED IN BERGAMO, ITALIA.</h1>
-              </section> */}
               <main className="principale">
                 <div className="globale">
                   <div className="testo">
                     <p>
                       <label className="lista__titolo">About</label>
-                      Samuel graduated in digital design & development, Samuel is a
+                      Samuel graduated in digital design & development and now a
                       passionate engineer specializing in interaction, animation, and
                       motion. Focusing on interactive user interface with rich
                       visuals and best practice in accessibility with scalable modern
@@ -47,7 +42,19 @@ export default function Home() {
                       <ul className="progettolista">
                         {DATA.map((project, index) => (
                           <div key={index} className="progettolista__elemento">
-                            <h5 className="progettolista__elemento__titolo">
+                            <h5
+                              className="progettolista__elemento__titolo"
+                              onClick={() => {
+                                setShow(2);
+                                setProject(
+                                  DATA.find(
+                                    (item) =>
+                                      item.name.toLowerCase() ===
+                                      project.name.toLowerCase()
+                                  )
+                                );
+                              }}
+                            >
                               {project.name}
                               <RiArrowRightDownLine />
                             </h5>
@@ -120,11 +127,11 @@ export default function Home() {
           }}
         >
           <div className="container__face__inner">
-            <div className="container__face__inner__col">2</div>
+            <div className="container__face__inner__col">{project?.name} 111</div>
           </div>
         </div>
 
-        <div
+        {/* <div
           className="container__face"
           style={{
             transform: `${show === 3 ? "rotateY(0deg)" : "rotateY(-180deg)"}`,
@@ -135,7 +142,7 @@ export default function Home() {
           <div className="container__face__inner">
             <div className="container__face__inner__col">3</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
