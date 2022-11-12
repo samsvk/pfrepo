@@ -24,12 +24,12 @@ export default function Home() {
         >
           <div className="container__face__inner">
             <div className="involucro">
-              <section className="superiore">
+              {/* <section className="superiore">
                 <h1 className="superiore__titolo">SAM CAMPBELL (23) IS A</h1>
                 <h1 className="superiore__titolo">*CREATIVE DEVELOPER*</h1>
                 <h1 className="superiore__titolo">FROM »SCOTLAND«</h1>
                 <h1 className="superiore__titolo">BASED IN BERGAMO, ITALIA.</h1>
-              </section>
+              </section> */}
               <main className="principale">
                 <div className="globale">
                   <div className="testo">
