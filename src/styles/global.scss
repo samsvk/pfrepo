@@ -217,3 +217,34 @@ h1 {
   flex-direction: column;
   gap: 2rem;
 }
+
+.progettolista {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  &__elemento {
+    border-radius: 0.5rem;
+    position: relative;
+    &__titolo {
+      vertical-align: middle;
+      align-items: center;
+      display: flex;
+      &:hover {
+        cursor: pointer;
+        & > svg {
+          transform: rotate(-45deg);
+        }
+      }
+      & > svg {
+        will-change: transform;
+        transition: transform 0.15s ease;
+        font-size: 16px;
+        transform: rotate(-90deg);
+      }
+    }
+    &__lista {
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  }
+}

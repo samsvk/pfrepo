@@ -1,10 +1,27 @@
 export default [
   {
+    name: "STFY",
+    desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
+    scope: ["Active", "4 Weeks"],
+    brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
+    imgs: [
+      "/projects/viperino/main.jpg",
+      "/projects/viperino/1.jpg",
+      "/projects/viperino/2.jpg",
+    ],
+    strategy: `I began researching competitors and highly consider their brand strategies. After numerous references to other educational sites and internal conversations, it became apparent Viperino required a design that emphasized guide content with an easy-to-use navigation and filtering system.`,
+    tech: ["Next", "Node", "Tailwind"],
+  },
+  {
     name: "Viperino",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
     brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
-    imgs: ["/projects/viperino/1.jpg", "/projects/viperino/2.jpg"],
+    imgs: [
+      "/projects/viperino/main.jpg",
+      "/projects/viperino/1.jpg",
+      "/projects/viperino/2.jpg",
+    ],
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous references to other educational sites and internal conversations, it became apparent Viperino required a design that emphasized guide content with an easy-to-use navigation and filtering system.`,
     tech: ["Next", "Stripe", "Tailwind"],
   },
@@ -18,26 +35,30 @@ export default [
 quickly and subsequently serving appropriate results with as minimal steps as possible was going to be fundamental to Nextflix's 
 success. By creating a simple wirefream and webflow, I was able to translate that directly into the application.`,
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
-    imgs: ["/projects/nextflix/1.jpg", "/projects/nextflix/2.jpg"],
+    imgs: [
+      "/projects/nextflix/main.jpg",
+      "/projects/nextflix/1.jpg",
+      "/projects/nextflix/2.jpg",
+    ],
   },
   {
     name: "Vivixstar",
     desc: `Front-end studio display to display their latest art with an interactive fluid-grid.`,
     scope: ["Active", "5 Weeks"],
     brief: `Vivi is a digital artist creating unique designs for leading industry streamers on all social medias. As Vivi became more successful, she realised it was important to have a centralised location to display her art and also have a terms of service that users have to agree to before being able to contact her.`,
-    imgs: ["/projects/vi/1.jpg", "/projects/vi/2.jpg"],
+    imgs: ["/projects/vi/main.jpg", "/projects/vi/1.jpg", "/projects/vi/2.jpg"],
     strategy: `I understood that I wanted to have large bold design using imagery to catch the user's eye. Using a fluid-grid layout I was able
     to present each image in its own unique way and relative to its aspect ratio. Using Puppeteer, I was able to web-scrape Vivi's Twitch Channel to display her commission status.`,
     tech: ["Next", "Puppeteer", "Tailwind"],
   },
   {
-    name: "Fontaine Studios",
+    name: "Fontaine",
     desc: `Front-end design for Fontaine Studio for displaying their latest products.`,
     scope: ["Active", "2 Weeks"],
     brief: `Fontaine is is a global brand focusing on great designed Playing Cards. Through cardistry and digital art, Fontaine has become the 'Supreme'
     of Cardistry.  As a card fan I felt that Fontaine would greatly benefit from simplistic one-page studio landing page that displayed their latest releases
     and restocked decks. `,
-    imgs: ["/projects/fontaine/1.jpg"],
+    imgs: ["/projects/fontaine/main.jpg", "/projects/fontaine/1.jpg"],
     strategy: `Fontaine thrives through simplicity I used that approach throughout this entire design trying to create a hands-off experience. Using minimal elements, and automatic transitions allowed me to create a flow that not only the user can control but the website can dictate the users experience.`,
     tech: ["React", "SASS", "BEM"],
   },
@@ -50,7 +71,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy: `There wasn't much strategy in my portfolio, I honestly... just winged it. In past iterations of my portfolio, I felt I tried too hard to make 
     an industry-standard design and I wanted to achieve a different outcome with Svk.`,
     tech: ["Next", "Tailwind", "Node", "Framer Motion"],
-    imgs: ["/projects/svk/1.jpg", "/projects/svk/2.jpg"],
+    imgs: ["/projects/svk/main.png", "/projects/svk/1.jpg", "/projects/svk/2.jpg"],
   },
   {
     name: "Mograine",
@@ -61,7 +82,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy:
       "Taking into consideration Warcraft's RPG value and Blizzard Ent's unique design patterns I felt it was necessary to emulate that fantasy feeling.",
     tech: ["Typescript", "BEM"],
-    imgs: ["/projects/mograine/1.jpg"],
+    imgs: ["/projects/mograine/main.jpg", "/projects/mograine/1.jpg"],
   },
   {
     name: "Pigfingers",
@@ -72,6 +93,10 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy:
       "Typing has become a modern aesthetic - building a visually appealing site to match that was the baseline for Pigfingers. By using a mono font and vscode theming we were able to quickly achieve an eye-candy aesthetic that translated throughout the entire Pigfingers site.",
     tech: ["React", "SASS"],
-    imgs: ["/projects/pigfingers/3.jpg", "/projects/pigfingers/2.jpg"],
+    imgs: [
+      "/projects/pigfingers/main.jpg",
+      "/projects/pigfingers/3.jpg",
+      "/projects/pigfingers/2.jpg",
+    ],
   },
 ];

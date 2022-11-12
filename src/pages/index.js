@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
+import DATA from "../static/_";
+import Image from "next/image";
+import { RiArrowRightDownLine } from "react-icons/ri";
 
 export default function Home() {
   const [show, setShow] = useState(1);
@@ -33,8 +36,22 @@ export default function Home() {
                   </p>
 
                   <div>
-                    <ul>
-                      <label className="lista__titolo">Recent Works</label>
+                    <label className="lista__titolo">Recent Works</label>
+                    <ul className="progettolista">
+                      {DATA.map((project, index) => (
+                        <div className="progettolista__elemento">
+                          <h5 className="progettolista__elemento__titolo">
+                            {project.name}
+                            <RiArrowRightDownLine />
+                          </h5>
+                          <ul className="progettolista__elemento__lista">
+                            {project.tech
+                              .slice(0, 2)
+                              .map((item) => item)
+                              .join(", ")}
+                          </ul>
+                        </div>
+                      ))}
                     </ul>
                   </div>
                 </div>
