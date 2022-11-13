@@ -6,7 +6,7 @@ import { RiArrowRightDownLine } from "react-icons/ri";
 export default function Home() {
   const [show, setShow] = useState(1);
   const [project, setProject] = useState(null);
-  console.log(project);
+
   return (
     <>
       <div className="container">
@@ -128,6 +128,10 @@ export default function Home() {
         >
           <div className="container__face__inner">
             <div className="container__face__inner__col">{project?.name} 111</div>
+            <div
+              className="container__face__inner__close"
+              onClick={() => setShow(1)}
+            ></div>
           </div>
         </div>
 
