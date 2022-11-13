@@ -70,22 +70,26 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
                 <div className="globale">
                   <ul className="lista">
                     <label className="lista__titolo">Who</label>
                     <li className="lista__elemento">Samuel Campbell</li>
                   </ul>
-                  <ul className="lista">
+                  <ul className="lista mobile">
                     <label className="lista__titolo">Location</label>
                     <li className="lista__elemento">Bergamo, Italia</li>
                     <li className="lista__elemento">45.6983° N, 9.6773° E</li>
                   </ul>
-                  <ul className="lista">
+                  <ul className="lista mobile">
                     <label className="lista__titolo">Email</label>
                     <li className="lista__elemento">hello@samsvk.com</li>
                   </ul>
                   <ul className="lista">
                     <label className="lista__titolo">Socials</label>
+                    <li className="lista__elemento lista__elemento--link mobile">
+                      Email
+                    </li>
                     <li className="lista__elemento lista__elemento--link">Github</li>
                     <li className="lista__elemento lista__elemento--link">
                       Twitter
@@ -99,7 +103,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="globale">
-                  <ul className="lista">
+                  <ul className="lista mobile">
                     <label className="lista__titolo">Currently at</label>
                     <li className="lista__elemento">Fulltime — Freelance</li>
                   </ul>

@@ -11,6 +11,7 @@ $font: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   font-size: 100%;
   line-height: 1.5;
   font: inherit;
@@ -129,11 +130,14 @@ $c-text-p: #343434;
     overflow: auto;
     &__inner {
       height: 100%;
-      width: 100%;
+      // background: green;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 800px) {
+        height: auto;
+      }
     }
   }
 
@@ -193,11 +197,18 @@ h1 {
   margin-bottom: auto;
   max-width: 1320px;
   width: 100%;
+  gap: 2rem 0;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 585px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 .globale {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
   max-width: max-content;
   width: 100%;
@@ -205,8 +216,39 @@ h1 {
   justify-content: flex-start;
   justify-items: flex-start;
   margin-bottom: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  @media (max-width: 800px) {
+    &:nth-child(1) {
+      order: 3;
+      grid-column: span 2 / span 2;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+  @media (max-width: 585px) {
+    &:nth-child(1) {
+      grid-column: span 1 / span 1;
+    }
+    &:nth-child(2) {
+      grid-column: span 1 / span 1;
+    }
+    &:nth-child(3) {
+      grid-column: span 1 / span 1;
+    }
+  }
 }
 .lista {
+  &.mobile {
+    @media (max-width: 585px) {
+      display: none;
+    }
+  }
   &__titolo {
     margin-bottom: 0.5rem;
     opacity: 0.5;
@@ -216,6 +258,11 @@ h1 {
     @include text;
     margin-top: 0.145rem;
     &--link {
+      &.mobile {
+        @media (min-width: 585px) {
+          display: none;
+        }
+      }
       text-decoration: underline;
       transition: opacity 0.6s ease;
       &:hover {
@@ -240,6 +287,9 @@ h1 {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  @media (max-width: 585px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   &__elemento {
     border-radius: 0.5rem;
     position: relative;
@@ -261,15 +311,18 @@ h1 {
       }
     }
     &__lista {
-      font-size: 14px;
+      font-size: 12px;
       opacity: 0.5;
+      font-weight: 500;
     }
   }
 }
+
 .involucro {
   max-width: 1320px;
   width: 100%;
 }
+
 .superiore {
   display: grid;
   grid-template-columns: repeat(14, minmax(0, 1fr));
