@@ -83,22 +83,37 @@ export default function Home() {
                   </ul>
                   <ul className="lista mobile">
                     <label className="lista__titolo">Email</label>
-                    <li className="lista__elemento">hello@samsvk.com</li>
+                    <li className="lista__elemento">
+                      <a>hello@samsvk.com</a>
+                    </li>
                   </ul>
                   <ul className="lista">
                     <label className="lista__titolo">Socials</label>
                     <li className="lista__elemento lista__elemento--link mobile">
                       Email
                     </li>
-                    <li className="lista__elemento lista__elemento--link">Github</li>
                     <li className="lista__elemento lista__elemento--link">
-                      Twitter
+                      <a href="https://github.com/samsvk" target="_blank">
+                        Github
+                      </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
-                      Dribbble
+                      <a href="https://twitter.com/svkxo" target="_blank">
+                        Twitter
+                      </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
-                      Spotify
+                      <a href="https://dribbble.com/svkxo" target="_blank">
+                        Dribbble
+                      </a>
+                    </li>
+                    <li className="lista__elemento lista__elemento--link">
+                      <a
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        target="_blank"
+                      >
+                        Spotify
+                      </a>
                     </li>
                   </ul>
                 </div>
