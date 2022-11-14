@@ -84,13 +84,17 @@ export default function Home() {
                   <ul className="lista mobile">
                     <label className="lista__titolo">Email</label>
                     <li className="lista__elemento">
-                      <a>hello@samsvk.com</a>
+                      <a href="mailto:samsvk@gmail.com?subject=inquiring about your services">
+                        hello@samsvk.com
+                      </a>
                     </li>
                   </ul>
                   <ul className="lista">
                     <label className="lista__titolo">Socials</label>
                     <li className="lista__elemento lista__elemento--link mobile">
-                      Email
+                      <a href="mailto:samsvk@gmail.com?subject=inquiring about your services">
+                        Email
+                      </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
                       <a href="https://github.com/samsvk" target="_blank">
