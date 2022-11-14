@@ -10,9 +10,23 @@ export default function ProjectItem({ project }) {
   return (
     <div className="vistadelprogetto">
       <div className="vistadelprogetto__principale">
-        <h1 className="vistadelprogetto__principale__title">{project.name}</h1>
+        <div className="vistadelprogetto__principale__intestazione">
+          <h1 className="vistadelprogetto__principale__intestazione__title">
+            {project.name}
+          </h1>
+          <div className="vistadelprogetto__principale__intestazione__img">
+            <Image
+              quality={100}
+              loading="eager"
+              priority={true}
+              layout="fill"
+              objectFit="cover"
+              src={project.imgs[0]}
+            />
+          </div>
+        </div>
 
-        {<Swipe views={project.imgs} />}
+        {/* {<Swipe views={project.imgs} />} */}
 
         <div className="vistadelprogetto__principale__lista">
           <ul className="lista">

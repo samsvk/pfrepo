@@ -4,7 +4,7 @@ export default [
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
     brief: `Shuffle is a fullstack web application focusing on streaming and data analysis using the Spotify API.`,
-    imgs: ["/projects/viperino/1.jpg", "/projects/viperino/2.jpg"],
+    imgs: ["/projects/viperino/main.jpg"],
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous references to other educational sites and internal conversations, it became apparent Viperino required a design that emphasized guide content with an easy-to-use navigation and filtering system.`,
     tech: ["Next", "Node", "Tailwind"],
   },
@@ -13,11 +13,7 @@ export default [
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
     brief: `Viper is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
-    imgs: [
-      "/projects/viperino/main.jpg",
-      "/projects/viperino/1.jpg",
-      "/projects/viperino/2.jpg",
-    ],
+    imgs: ["/projects/viperino/main.jpg"],
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous references to other educational sites and internal conversations, it became apparent Viperino required a design that emphasized guide content with an easy-to-use navigation and filtering system.`,
     tech: ["Next", "Stripe", "Tailwind"],
   },
@@ -31,11 +27,7 @@ export default [
 quickly and subsequently serving appropriate results with as minimal steps as possible was going to be fundamental to Nextflix's 
 success. By creating a simple wirefream and webflow, I was able to translate that directly into the application.`,
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
-    imgs: [
-      "/projects/nextflix/main.jpg",
-      "/projects/nextflix/1.jpg",
-      "/projects/nextflix/2.jpg",
-    ],
+    imgs: ["/projects/nextflix/main.jpg"],
   },
   {
     name: "Vivixstar",
@@ -67,7 +59,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy: `There wasn't much strategy in my portfolio, I honestly... just winged it. In past iterations of my portfolio, I felt I tried too hard to make 
     an industry-standard design and I wanted to achieve a different outcome with Svk.`,
     tech: ["Next", "Tailwind", "Node", "Framer Motion"],
-    imgs: ["/projects/svk/main.png", "/projects/svk/1.jpg", "/projects/svk/2.jpg"],
+    imgs: ["/projects/svk/main.png"],
   },
   {
     name: "Mograine",
@@ -78,7 +70,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy:
       "Taking into consideration Warcraft's RPG value and Blizzard Ent's unique design patterns I felt it was necessary to emulate that fantasy feeling.",
     tech: ["Typescript", "BEM"],
-    imgs: ["/projects/mograine/main.jpg", "/projects/mograine/1.jpg"],
+    imgs: ["/projects/mograine/main.jpg"],
   },
   {
     name: "Pigfingers",
@@ -89,10 +81,6 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     strategy:
       "Typing has become a modern aesthetic - building a visually appealing site to match that was the baseline for Pigfingers. By using a mono font and vscode theming we were able to quickly achieve an eye-candy aesthetic that translated throughout the entire Pigfingers site.",
     tech: ["React", "SASS"],
-    imgs: [
-      "/projects/pigfingers/main.jpg",
-      "/projects/pigfingers/3.jpg",
-      "/projects/pigfingers/2.jpg",
-    ],
+    imgs: ["/projects/pigfingers/main.jpg"],
   },
 ];
