@@ -1,22 +1,18 @@
 export default [
   {
-    name: "STFY",
+    name: "Shuffle",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
-    brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
-    imgs: [
-      "/projects/viperino/main.jpg",
-      "/projects/viperino/1.jpg",
-      "/projects/viperino/2.jpg",
-    ],
+    brief: `Shuffle is a fullstack web application focusing on streaming and data analysis using the Spotify API.`,
+    imgs: ["/projects/viperino/1.jpg", "/projects/viperino/2.jpg"],
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous references to other educational sites and internal conversations, it became apparent Viperino required a design that emphasized guide content with an easy-to-use navigation and filtering system.`,
     tech: ["Next", "Node", "Tailwind"],
   },
   {
-    name: "Viperino",
+    name: "Viper",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
-    brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
+    brief: `Viper is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
     imgs: [
       "/projects/viperino/main.jpg",
       "/projects/viperino/1.jpg",

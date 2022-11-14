@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import DATA from "../static/_";
 import { RiArrowRightDownLine } from "react-icons/ri";
+import ProjectItem from "../components/projectItem";
 
 export default function Home() {
   const [show, setShow] = useState(1);
@@ -83,7 +84,7 @@ export default function Home() {
                   </ul>
                   <ul className="lista mobile">
                     <label className="lista__titolo">Email</label>
-                    <li className="lista__elemento">
+                    <li className="lista__elemento lista__elemento--link">
                       <a href="mailto:samsvk@gmail.com?subject=inquiring about your services">
                         hello@samsvk.com
                       </a>
@@ -150,7 +151,9 @@ export default function Home() {
           }}
         >
           <div className="container__face__inner">
-            <div className="container__face__inner__col">{project?.name} 111</div>
+            <div className="container__face__inner__col">
+              <ProjectItem project={project} />
+            </div>
             <div
               className="container__face__inner__close"
               onClick={() => setShow(1)}

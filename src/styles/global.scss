@@ -251,6 +251,13 @@ body {
   &__elemento {
     @include text;
     margin-top: 0.145rem;
+    &.titolo {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    &--inline {
+      display: inline-block;
+    }
     &--link {
       &.mobile {
         @media (min-width: 585px) {
@@ -365,4 +372,34 @@ body {
   justify-content: space-between;
   padding: 2rem 0;
   @include text;
+}
+.desc {
+  max-width: 225px;
+}
+.vistadelprogetto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__principale {
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    &__lista {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+    }
+    &__info {
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 2;
+    }
+  }
 }
