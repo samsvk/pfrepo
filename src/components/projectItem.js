@@ -1,12 +1,8 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import SwiperCore, { FreeMode } from "swiper";
-SwiperCore.use([FreeMode]);
-
+import { useEffect, useState } from "react";
 export default function ProjectItem({ project }) {
   if (!project) return null;
+
   return (
     <div className="vistadelprogetto">
       <div className="vistadelprogetto__principale">
@@ -14,20 +10,7 @@ export default function ProjectItem({ project }) {
           <h1 className="vistadelprogetto__principale__intestazione__title">
             {project.name}
           </h1>
-          <div className="vistadelprogetto__principale__intestazione__img">
-            <Image
-              quality={100}
-              loading="eager"
-              priority={true}
-              layout="fill"
-              objectFit="cover"
-              src={project.imgs[0]}
-            />
-          </div>
         </div>
-
-        {/* {<Swipe views={project.imgs} />} */}
-
         <div className="vistadelprogetto__principale__lista">
           <ul className="lista">
             <label className="lista__titolo">Description</label>
@@ -51,39 +34,23 @@ export default function ProjectItem({ project }) {
           </section>
         </div>
       </div>
+
+      <div className="vistadelprogetto__principale__imgs">
+        <div className="vistadelprogetto__principale__imgs__swiper">
+          <div className="vistadelprogetto__principale__imgs__swiper__elemento">
+            <div className="vistadelprogetto__principale__imgs__swiper__elemento__img">
+              <Image
+                quality={100}
+                loading="eager"
+                priority={true}
+                layout="fill"
+                objectFit="cover"
+                src={project.imgs[0]}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export const Swipe = ({ views }) => {
-  return (
-    <>
-      <div className="vistadelprogetto__principale__imgs">
-        <Swiper
-          slidesPerView="auto"
-          freeMode={true}
-          spaceBetween={30}
-          className="vistadelprogetto__principale__imgs__swiper "
-        >
-          {views.map((item, i) => (
-            <SwiperSlide
-              key={i}
-              className="vistadelprogetto__principale__imgs__swiper__elemento"
-            >
-              <div className="vistadelprogetto__principale__imgs__swiper__elemento__img">
-                <Image
-                  quality={100}
-                  loading="eager"
-                  priority={true}
-                  layout="fill"
-                  objectFit="cover"
-                  src={item}
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </>
-  );
-};

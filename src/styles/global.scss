@@ -396,7 +396,6 @@ body {
         height: 100px;
         width: 172px;
         position: relative;
-        // filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
         filter: grayscale(10%);
         border-radius: 4px;
         overflow: hidden;
@@ -416,7 +415,7 @@ body {
         overflow: hidden;
         cursor: grab;
         &__elemento {
-          width: 82% !important;
+          width: 66% !important;
           &:last-child {
             margin-right: 5rem;
           }
