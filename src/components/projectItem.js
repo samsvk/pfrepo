@@ -35,22 +35,24 @@ export default function ProjectItem({ project }) {
         </div>
       </div>
 
-      <div className="vistadelprogetto__principale__imgs">
-        <div className="vistadelprogetto__principale__imgs__swiper">
-          <div className="vistadelprogetto__principale__imgs__swiper__elemento">
-            <div className="vistadelprogetto__principale__imgs__swiper__elemento__img">
+      {/* <div className="immagine__involucro">
+        <label className="lista__titolo">Previews</label>
+
+        <div className="immagine__involucro__immagini">
+          {project.imgs.map((img, index) => (
+            <div className="immagine__involucro__immagini__img" key={index}>
               <Image
                 quality={100}
                 loading="eager"
                 priority={true}
                 layout="fill"
                 objectFit="cover"
-                src={project.imgs[0]}
+                src={img}
               />
             </div>
-          </div>
+          ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
