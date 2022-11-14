@@ -13,9 +13,9 @@ export default function ProjectItem({ project }) {
           </ul>
           <ul className="lista">
             <label className="lista__titolo">Tech Used</label>
-            {project.tech.map((item, index) => (
-              <li className="lista__elemento">{item}</li>
-            ))}
+            <li className="lista__elemento">
+              {project.tech.map((item, index) => item).join(", ")}
+            </li>
           </ul>
         </div>
         <div className="vistadelprogetto__principale__info">
