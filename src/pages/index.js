@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div
+        <div
           className="container__face"
           style={{
             transform: `${show === 3 ? "rotateY(0deg)" : "rotateY(-180deg)"}`,
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="container__face__inner">
             <div className="container__face__inner__col">3</div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
