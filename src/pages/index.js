@@ -100,17 +100,29 @@ export default function Home() {
                       </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
-                      <a href="https://github.com/samsvk" target="_blank">
+                      <a
+                        href="https://github.com/samsvk"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Github
                       </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
-                      <a href="https://twitter.com/svkxo" target="_blank">
+                      <a
+                        href="https://twitter.com/svkxo"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Twitter
                       </a>
                     </li>
                     <li className="lista__elemento lista__elemento--link">
-                      <a href="https://dribbble.com/svkxo" target="_blank">
+                      <a
+                        href="https://dribbble.com/svkxo"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Dribbble
                       </a>
                     </li>
@@ -118,6 +130,7 @@ export default function Home() {
                       <a
                         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         Spotify
                       </a>
