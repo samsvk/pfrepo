@@ -81,8 +81,8 @@ export default function Home() {
                   </ul>
                   <ul className="lista mobile">
                     <label className="lista__titolo">Location</label>
-                    <li className="lista__elemento">Bergamo, Italia</li>
-                    <li className="lista__elemento">45.6983° N, 9.6773° E</li>
+                    <li className="lista__elemento">Edinburgh, UK</li>
+                    <li className="lista__elemento">55.9533° N, 3.1883° W</li>
                   </ul>
                   <ul className="lista mobile">
                     <label className="lista__titolo">Email</label>
