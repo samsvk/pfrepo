@@ -172,6 +172,7 @@ export default function Home() {
                     layout="fill"
                     alt={"preview image of project display page"}
                     objectFit="contain"
+                    // objectPosition="top"
                     src={project?.imgs[previewImage]}
                   />
                 )}
