@@ -1,8 +1,11 @@
 import Image from "next/image";
-import { RiArrowRightDownLine } from "react-icons/ri";
-export default function CV() {
+import { RiArrowRightDownLine, RiCloseLine } from "react-icons/ri";
+export default function CV({ setShow }) {
   return (
     <div className="cv">
+      <div className="cv__close" onClick={() => setShow(1)}>
+        <RiCloseLine size={16} />
+      </div>
       <header className="cv__header">
         <div className="cv__header__img">
           <Image

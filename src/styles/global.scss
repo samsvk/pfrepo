@@ -131,6 +131,7 @@ $c-text-p: #343434;
     overflow: auto;
     @media (max-width: 800px) {
       padding: 1rem;
+      transition: transform 1s cubic-bezier(0.15, 1, 0.25, 1), opacity 0.1s ease 0;
     }
     &__inner {
       height: 100%;
@@ -489,6 +490,28 @@ body {
 }
 
 .cv {
+  &__close {
+    @media (min-width: 800px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    z-index: 100;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(0 0 0 / 0.06);
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    &:hover {
+      border: 1px solid rgb(0 0 0 / 0.1);
+      cursor: pointer;
+    }
+  }
+  position: relative;
   max-width: 450px;
   width: 100%;
   display: flex;
@@ -533,6 +556,7 @@ body {
   @include text;
   margin-top: 1.5rem;
   display: flex;
+  margin-bottom: 2rem;
   &__yr {
     display: block;
     min-width: 130px;

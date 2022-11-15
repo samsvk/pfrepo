@@ -176,7 +176,7 @@ export default function Home() {
         >
           <div className="container__face__inner">
             <div className="container__face__inner__col">
-              <CV />
+              <CV setShow={setShow} />
             </div>
             <div
               className="container__face__inner__close"
