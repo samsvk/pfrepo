@@ -10,10 +10,6 @@ export default function Home() {
   const [previewImage, setPreviewImage] = useState(-1);
   const [project, setProject] = useState(null);
 
-  console.log(previewImage);
-  console.log(project?.imgs[previewImage]);
-  console.log(DATA[0].imgs[0]);
-
   return (
     <>
       <div className="container">
