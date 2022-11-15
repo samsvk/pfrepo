@@ -2,8 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import DATA from "../static/_";
 import { RiArrowRightDownLine } from "react-icons/ri";
-import ProjectItem from "../components/projectItem";
-import Image from "next/image";
+import CV from "../components/cv";
 
 export default function Home() {
   const [show, setShow] = useState(1);
@@ -37,7 +36,13 @@ export default function Home() {
                       passionate engineer specializing in interaction, animation, and
                       motion. Focusing on interactive user interface with rich
                       visuals and best practice in accessibility with scalable modern
-                      technology.
+                      technology. See his CV for more academic information{" "}
+                      <span
+                        className="lista__elemento lista__elemento--link"
+                        onClick={() => setShow(2)}
+                      >
+                        Curriculum Vitae
+                      </span>
                     </p>
 
                     <div>
@@ -48,14 +53,14 @@ export default function Home() {
                             <h5
                               className="progettolista__elemento__titolo"
                               onClick={() => {
-                                setShow(2);
-                                setProject(
-                                  DATA.find(
-                                    (item) =>
-                                      item.name.toLowerCase() ===
-                                      project.name.toLowerCase()
-                                  )
-                                );
+                                // setShow(2);
+                                // setProject(
+                                //   DATA.find(
+                                //     (item) =>
+                                //       item.name.toLowerCase() ===
+                                //       project.name.toLowerCase()
+                                //   )
+                                // );
                               }}
                             >
                               {project.name}
@@ -167,6 +172,27 @@ export default function Home() {
         >
           <div className="container__face__inner">
             <div className="container__face__inner__col">
+              <CV />
+            </div>
+            <div
+              className="container__face__inner__close"
+              onClick={() => {
+                setShow(1);
+              }}
+            ></div>
+          </div>
+        </div>
+
+        {/* <div
+          className="container__face"
+          style={{
+            transform: `${show === 2 ? "rotateY(0deg)" : "rotateY(180deg)"}`,
+            opacity: `${show === 2 ? 1 : 0}`,
+            zIndex: `${show === 2 ? 5 : 0}`,
+          }}
+        >
+          <div className="container__face__inner">
+            <div className="container__face__inner__col">
               <ProjectItem project={project} setPreviewImage={setPreviewImage} />
             </div>
             <div
@@ -192,7 +218,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="container__face"
