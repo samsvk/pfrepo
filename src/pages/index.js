@@ -61,6 +61,7 @@ export default function Home() {
                                 //       project.name.toLowerCase()
                                 //   )
                                 // );
+                                location.href = project.link;
                               }}
                             >
                               {project.name}
