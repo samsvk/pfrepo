@@ -418,7 +418,7 @@ body {
     }
     &__imgs {
       display: flex;
-      align-items: start;
+      align-items: flex-start;
       justify-content: flex-start;
       justify-items: flex-start;
       width: 100%;
@@ -547,14 +547,17 @@ body {
       opacity: 0.5;
     }
     &__arrow {
-      &:hover {
-        cursor: pointer;
-      }
-      display: flex;
-      align-items: center;
-      & > svg {
-        color: inherit;
-        transform: rotate(-90deg);
+      & > a {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
+        & > svg {
+          color: inherit;
+          transform: rotate(-90deg);
+        }
       }
     }
   }

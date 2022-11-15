@@ -48,7 +48,9 @@ export default function CV() {
             <span className="work__lista__elemento__yr">2018 — Now</span>
             <span className="work__lista__elemento__titolo">
               <span className="work__lista__elemento__titolo__arrow">
-                Front-end Developer at Freelance <RiArrowRightDownLine size={16} />
+                <a href="https://samsvk.com" target="_blank" rel="noreferrer">
+                  Front-end Developer at Freelance <RiArrowRightDownLine size={16} />
+                </a>
               </span>
               <span className="work__lista__elemento__titolo__loc">
                 Bergamo, IT.
@@ -59,7 +61,9 @@ export default function CV() {
             <span className="work__lista__elemento__yr">2018 — 2019</span>
             <span className="work__lista__elemento__titolo">
               <span className="work__lista__elemento__titolo__arrow">
-                Method Esports Organisation <RiArrowRightDownLine size={16} />
+                <a href="https://method.gg" target="_blank" rel="noreferrer">
+                  Method Esports Organisation <RiArrowRightDownLine size={16} />
+                </a>
               </span>
               <span className="work__lista__elemento__titolo__loc">
                 Scotland, UK — Freelance.
@@ -71,7 +75,9 @@ export default function CV() {
             <span className="work__lista__elemento__yr">2017 — 2018</span>
             <span className="work__lista__elemento__titolo">
               <span className="work__lista__elemento__titolo__arrow">
-                SoaR Gaming <RiArrowRightDownLine size={16} />
+                <a href="https://soar.gg" target="_blank" rel="noreferrer">
+                  SoaR Gaming <RiArrowRightDownLine size={16} />
+                </a>
               </span>
               <span className="work__lista__elemento__titolo__loc">
                 Remote — Freelance
@@ -83,7 +89,9 @@ export default function CV() {
             <span className="work__lista__elemento__yr">2016 — 2019</span>
             <span className="work__lista__elemento__titolo">
               <span className="work__lista__elemento__titolo__arrow">
-                Twitch <RiArrowRightDownLine size={16} />
+                <a href="https://twitch.tv/" target="_blank" rel="noreferrer">
+                  Twitch <RiArrowRightDownLine size={16} />
+                </a>
               </span>
               <span className="work__lista__elemento__titolo__loc">
                 Remote — Fulltime
@@ -95,7 +103,9 @@ export default function CV() {
             <span className="work__lista__elemento__yr">2017 — 2020</span>
             <span className="work__lista__elemento__titolo">
               <span className="work__lista__elemento__titolo__arrow">
-                Education <RiArrowRightDownLine size={16} />
+                <a href="#" target="_blank" rel="noreferrer">
+                  Education <RiArrowRightDownLine size={16} />
+                </a>
               </span>
               <span className="work__lista__elemento__titolo__loc">
                 Info available on Request.
