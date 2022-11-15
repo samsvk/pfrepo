@@ -3,10 +3,16 @@ import { useState } from "react";
 import DATA from "../static/_";
 import { RiArrowRightDownLine } from "react-icons/ri";
 import ProjectItem from "../components/projectItem";
+import Image from "next/image";
 
 export default function Home() {
   const [show, setShow] = useState(1);
+  const [previewImage, setPreviewImage] = useState(-1);
   const [project, setProject] = useState(null);
+
+  console.log(previewImage);
+  console.log(project?.imgs[previewImage]);
+  console.log(DATA[0].imgs[0]);
 
   return (
     <>
@@ -152,12 +158,29 @@ export default function Home() {
         >
           <div className="container__face__inner">
             <div className="container__face__inner__col">
-              <ProjectItem project={project} />
+              <ProjectItem project={project} setPreviewImage={setPreviewImage} />
             </div>
             <div
               className="container__face__inner__close"
-              onClick={() => setShow(1)}
-            ></div>
+              onClick={() => {
+                setPreviewImage(-1);
+                setShow(1);
+              }}
+            >
+              <div className="container__face__inner__close__img">
+                {previewImage !== -1 && (
+                  <Image
+                    quality={100}
+                    loading="eager"
+                    priority={true}
+                    layout="fill"
+                    alt={"preview image of project display page"}
+                    objectFit="contain"
+                    src={project?.imgs[previewImage]}
+                  />
+                )}
+              </div>
+            </div>
           </div>
         </div>
 

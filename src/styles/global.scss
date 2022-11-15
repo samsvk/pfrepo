@@ -165,6 +165,9 @@ $c-text-p: #343434;
     height: 100%;
     padding: 2rem;
     position: relative;
+    &__img {
+      width: 100%;
+    }
   }
 }
 

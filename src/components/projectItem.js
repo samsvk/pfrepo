@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-export default function ProjectItem({ project }) {
+export default function ProjectItem({ project, setPreviewImage }) {
   if (!project) return null;
 
   return (
@@ -35,12 +35,16 @@ export default function ProjectItem({ project }) {
         </div>
       </div>
 
-      {/* <div className="immagine__involucro">
+      <div className="immagine__involucro">
         <label className="lista__titolo">Previews</label>
 
         <div className="immagine__involucro__immagini">
           {project.imgs.map((img, index) => (
-            <div className="immagine__involucro__immagini__img" key={index}>
+            <div
+              className="immagine__involucro__immagini__img"
+              key={index}
+              onClick={() => setPreviewImage(index)}
+            >
               <Image
                 quality={100}
                 loading="eager"
@@ -52,7 +56,7 @@ export default function ProjectItem({ project }) {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
