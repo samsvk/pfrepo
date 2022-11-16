@@ -8,8 +8,6 @@ export default function Home() {
   const [show, setShow] = useState(1);
   const [previewImage, setPreviewImage] = useState(-1);
   const [project, setProject] = useState(null);
-  const size = useWindowSize();
-  const mobileDevice = size.width < 800;
   return (
     <>
       <div className="container">
