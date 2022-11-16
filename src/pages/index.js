@@ -1,14 +1,16 @@
 import Head from "next/head";
 import { useState } from "react";
 import DATA from "../static/_";
-import { RiArrowRightDownLine } from "react-icons/ri";
+import { RiArrowRightDownLine, RiMovieLine } from "react-icons/ri";
 import CV from "../components/cv";
+import useWindowSize from "../components/useWindowSize";
 
 export default function Home() {
   const [show, setShow] = useState(1);
   const [previewImage, setPreviewImage] = useState(-1);
   const [project, setProject] = useState(null);
-
+  const size = useWindowSize();
+  const mobileDevice = size.width < 800;
   return (
     <>
       <div className="container">
@@ -21,10 +23,10 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div
-          className="container__face"
+          className={`container__face`}
           style={{
             transform: `${show === 1 ? "rotateY(0deg)" : "rotateY(180deg)"}`,
-            opacity: `${show === 1 ? 1 : 0.25}`,
+            opacity: `${show === 1 ? 1 : show !== 1 && mobileDevice ? 0 : 0.25}`,
             zIndex: `${show === 1 ? 5 : 0}`,
           }}
         >
