@@ -3,7 +3,6 @@ import { useState } from "react";
 import DATA from "../static/_";
 import { RiArrowRightDownLine, RiMovieLine } from "react-icons/ri";
 import CV from "../components/cv";
-import useWindowSize from "../components/useWindowSize";
 
 export default function Home() {
   const [show, setShow] = useState(1);
