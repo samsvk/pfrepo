@@ -23,10 +23,9 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div
-          className={`container__face`}
+          className={`container__face ${show === 1 ? "show" : "hidden"}`}
           style={{
             transform: `${show === 1 ? "rotateY(0deg)" : "rotateY(180deg)"}`,
-            opacity: `${show === 1 ? 1 : show !== 1 && mobileDevice ? 0 : 0.25}`,
             zIndex: `${show === 1 ? 5 : 0}`,
           }}
         >
