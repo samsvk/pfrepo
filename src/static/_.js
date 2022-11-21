@@ -1,6 +1,6 @@
 export default [
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/status_server",
     name: "Shuffle",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
@@ -10,7 +10,7 @@ export default [
     tech: ["Next", "Node", "Tailwind"],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/viperino",
     name: "Viper",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
@@ -24,7 +24,7 @@ export default [
     tech: ["Next", "Stripe", "Tailwind"],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/MVA_CLIENT",
     name: "Nextflix",
     scope: ["Active", "8 Weeks"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
@@ -41,7 +41,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     ],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/vi",
     name: "Vivixstar",
     desc: `Front-end studio display to display their latest art with an interactive fluid-grid.`,
     scope: ["Active", "5 Weeks"],
@@ -52,7 +52,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     tech: ["Next", "Puppeteer", "Tailwind"],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/fontaine",
     name: "Fontaine",
     desc: `Front-end design for Fontaine Studio for displaying their latest products.`,
     scope: ["Active", "2 Weeks"],
@@ -64,7 +64,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     tech: ["React", "SASS", "BEM"],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/SoM_Ranker_PUB",
     name: "Mograine",
     scope: ["Closed", "24 Weeks"],
     desc: "Front-end app that provides Warcraft players all PvP statistics.",
@@ -76,7 +76,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     imgs: ["/projects/mograine/main.jpg", "/projects/mograine/main2.jpg"],
   },
   {
-    link: "https://github.com/samsvk",
+    link: "https://github.com/samsvk/pigfingers",
     name: "Pigfingers",
     scope: ["Closed", "4 Weeks"],
     desc: "Fully fledged front-end typeracer with tons of custom settings.",
