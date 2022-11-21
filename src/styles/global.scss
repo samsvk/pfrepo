@@ -136,7 +136,8 @@ $c-text-p: #343434;
     width: 100%;
     padding: 2rem;
     font-size: 0.875rem;
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.1s ease 0.1s;
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
     overflow: auto;
     @media (max-width: 800px) {
       padding: 1rem;
