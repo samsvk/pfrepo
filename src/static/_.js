@@ -1,6 +1,6 @@
 export default [
   {
-    link: "https://github.com/samsvk/status_server",
+    link: "https://github.com/samsvk/shuffle_server",
     name: "Shuffle",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "4 Weeks"],
@@ -24,7 +24,7 @@ export default [
     tech: ["Next", "Stripe", "Tailwind"],
   },
   {
-    link: "https://github.com/samsvk/MVA_CLIENT",
+    link: "https://github.com/samsvk/NetappServer/",
     name: "Nextflix",
     scope: ["Active", "8 Weeks"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
