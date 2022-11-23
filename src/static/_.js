@@ -41,7 +41,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     ],
   },
   {
-    link: "https://github.com/samsvk/vi",
+    link: "https://www.vivixstar.com/",
     name: "Vivixstar",
     desc: `Front-end studio display to display their latest art with an interactive fluid-grid.`,
     scope: ["Active", "5 Weeks"],
